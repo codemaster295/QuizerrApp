@@ -256,8 +256,8 @@ export default function Home() {
                   {data.options?.map(data => {
                     let selected = selectedAnswers === data
                     return (<li onClick={() => { setSelectedAnswer(data) }}
-                      className={selected ? 'transition-all bg-[#eefff2] hover:scale-[1.03] active:scale-[0.98] transform py-[12px] flex justify-between px-[30px] mt-[3px] mr-[9px] mb-[10px] ml-[9px] rounded-[12px] border border-[#4CAF50]' :
-                        'transition-all hover:scale-[1.03] active:scale-[0.98] transform px-[32px] py-[13px] mt-0 mr-[9px] mb-[10px] ml-[11px] rounded-[12px] bg-[#f7f7f8] text-black'
+                      className={selected ? 'transition-all bg-[#eefff2] hover:scale-[1.03] active:scale-[0.98] cursor-pointer transform py-[12px] flex justify-between px-[30px] mt-[3px] mr-[9px] mb-[10px] ml-[9px] rounded-[12px] border border-[#4CAF50]' :
+                        'transition-all hover:scale-[1.03] active:scale-[0.98] cursor-pointer transform px-[32px] py-[13px] mt-0 mr-[9px] mb-[10px] ml-[11px] rounded-[12px] bg-[#f7f7f8] text-black'
                       }>
 
                       <h1>{data}</h1>
